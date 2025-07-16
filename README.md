@@ -56,7 +56,7 @@ After making changes, package your chart again, update the index, and push to Gi
 
 ```bash
 helm package ./charts/bigleap -d ./bigleap-helm-chart/
-helm repo index ./bigleap-helm-chart/ --url https://yourusername.github.io/bigleap-helm-chart
+helm repo index ./bigleap-helm-chart/ --url https://vedantchimote.github.io/bigleap-helm-chart
 cd bigleap-helm-chart
 git add .
 git commit -m "Update chart documentation and metadata"
