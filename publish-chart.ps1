@@ -2,7 +2,7 @@
 # Variables
 $GITHUB_USERNAME = "vedantchimote"
 $REPO_NAME = "bigleap-helm-chart"
-$CHART_DIR = "./charts/bigleap"
+$CHART_DIR = "./bigleap"  # Changed from "./charts/bigleap" to "./bigleap"
 $REPO_URL = "https://$GITHUB_USERNAME.github.io/$REPO_NAME"
 $TEMP_DIR = "./temp-helm-repo"
 
@@ -46,7 +46,12 @@ Copy-Item "$TEMP_DIR/index.yaml" "$TEMP_DIR/repo/" -Force
 if (Test-Path "$CHART_DIR/README.md") {
     Copy-Item "$CHART_DIR/README.md" "$TEMP_DIR/repo/" -Force
 } else {
-    Write-Host "No README.md found"
+    Write-Host "No README.md found in chart directory, using root README if available"
+    if (Test-Path "./README.md") {
+        Copy-Item "./README.md" "$TEMP_DIR/repo/" -Force
+    } else {
+        Write-Host "No README.md found"
+    }
 }
 
 if (Test-Path "$CHART_DIR/artifacthub-repo.yml") {
