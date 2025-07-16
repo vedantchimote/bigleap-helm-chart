@@ -3,7 +3,26 @@ entries:
   bigleap:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-07-16T15:11:49.1438355+05:30"
+    created: "2025-07-16T15:12:17.5937385+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 41f4b01be8193caf86b07cf4ad978c33f0fb8057cbeee648966d91c51427e989
+    home: https://github.com/vedantchimote/bigleap
+    keywords:
+    - api
+    - express
+    - nodejs
+    - rest
+    maintainers:
+    - email: vedantc.code@gmail.com
+      name: Vedant Chimote
+    name: bigleap
+    type: application
+    urls:
+    - https://vedantchimote.github.io/bigleap-helm-chart/bigleap-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-07-16T15:12:17.5932128+05:30"
     description: A Helm chart for Kubernetes
     digest: bcbec3e20e11a0cfb115ea6ea6fc151e8893ec19c81e021b1efc282e2ea6a6c3
     home: https://github.com/vedantchimote/bigleap
@@ -22,9 +41,9 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-07-16T15:11:49.1449204+05:30"
+    created: "2025-07-16T15:12:17.5947913+05:30"
     description: A Helm chart for Kubernetes
-    digest: 9b164c561526f8d9627e4bc6a0cb127f819a01abb5cae800c4f0e42432a45311
+    digest: bcbec3e20e11a0cfb115ea6ea6fc151e8893ec19c81e021b1efc282e2ea6a6c3
     home: https://github.com/vedantchimote/bigleap
     keywords:
     - api
@@ -39,4 +58,4 @@ entries:
     urls:
     - https://vedantchimote.github.io/bigleap-helm-chart/repo/bigleap-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-16T15:11:49.141707+05:30"
+generated: "2025-07-16T15:12:17.5910574+05:30"
