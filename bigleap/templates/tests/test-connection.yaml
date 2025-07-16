@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "bigleap.fullname" . }}-test-connection"
+  labels:
+    {{- include "bigleap.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "bigleap.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
